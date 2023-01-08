@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, sans-serif;
+        }
+        
+        html {
+            background-color: rgb(239, 218, 160);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        p{
+            margin-bottom: 20px;
+        }
+
+        body {
+            position: relative;
+
+            width: 400px;
+            height: 400px;
+            padding: 24px;
+
+            top: 40px;
+            left: 35%;
+            border-radius: 10px;
+
+            background-color: rgb(255, 255, 255);
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.208);
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulario</h1>
+    <form action="cadastro.js" method="post" autocomplete="off">
+        <p>
+            <label for="inome">Nome:</label> 
+            <input type="text" name="inome" id="inome" required maxlength="15" size="10" placeholder="Nome">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome" required maxlength="20" size="10" placeholder="Sobrenome"> 
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" size="10" placeholder="Senha">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
