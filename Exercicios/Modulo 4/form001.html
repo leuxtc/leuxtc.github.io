@@ -45,26 +45,33 @@
 <body>
     <h1>Meu primeiro formulario</h1>
     <form action="cadastro.js" method="post" autocomplete="off">
-        <p>
-            <label for="inome">Nome:</label> 
-            <input type="text" name="inome" id="inome" required maxlength="15" size="10" placeholder="Nome">
-        </p>
-        <p>
-            <label for="isobrenome">Sobrenome:</label>
-            <input type="text" name="sobrenome" id="isobrenome" required maxlength="20" size="10" placeholder="Sobrenome"> 
-        </p>
-        <p>
-            <label for="isenha">Senha:</label>
-            <input type="password" name="senha" id="isenha" required minlength="8" size="10" placeholder="Senha">
-        </p>
-        <p>
-            <label for="idata">Data:</label>
-            <input type="date" name="data" id="idata">
-        </p>
-        <p>
-            <label for="imedia">Média</label>
-            <input type="number" name="media" id="imedia" min="0" max="10" step="0.5" placeholder="0">
-        </p>
+        <fieldset>
+            <legend>Dados</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="inome" id="inome" required maxlength="15" size="10" placeholder="Nome">
+            </p>
+            <p>
+                <label for="isobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="isobrenome" required maxlength="20" size="10" placeholder="Sobrenome">
+            </p>
+            <p>
+                <label for="isenha">Senha:</label>
+                <input type="password" name="senha" id="isenha" required minlength="8" size="10" placeholder="Senha">
+            </p>
+            <p>
+                <label for="idata">Data:</label>
+                <input type="date" name="data" id="idata">
+            </p>
+            <p>
+                <label for="imedia">Média</label>
+                <input type="number" name="media" id="imedia" min="0" max="10" step="0.5" placeholder="0">
+            </p>
+            <p>
+                <label for="itel">Telefone: </label>
+                <input type="tel" name="tel" id="itel" pattern="^\(\d(2)\)\d(4, 5)-\d(4)$">
+            </p>
+        </fieldset>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
