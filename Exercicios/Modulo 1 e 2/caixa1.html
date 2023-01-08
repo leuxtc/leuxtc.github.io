@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas e Grouping tags</title>
+    <style>
+        body {
+            background-color: rgb(70, 70, 70);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            text-align: center;
+            background-color: white;
+            padding: 10px;
+            margin: 30px 30px 0px 30px;
+        }
+        
+        nav {
+            background-color: black;
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            margin-left: 50px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: rgb(225, 225, 225);
+            padding: 10px;
+            margin: 0px 30px 30px 30px; 
+            border-top: 10px solid black;
+        }
+
+        footer {
+            margin: 30px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-align: center; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Caixas e Grouping tags</h1>
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Noticias da semana</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quas, esse sed voluptatibus perferendis inventore doloribus? Suscipit quaerat neque, molestias laborum modi molestiae, earum cumque atque labore dolorum laudantium enim.</p>
+                <aside>Artigo escrito por Lima mei</aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Josep Cadura</p>
+    </footer>
+</body>
+</html>
