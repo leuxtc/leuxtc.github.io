@@ -21,9 +21,8 @@ p, div {
 }
 
 p, div#botoes {
-    position: absolute;
-    top: 390px;
-    left: 170px;
+    position: relative;
+    top: 100px;
     text-align: center;
 }
 
