@@ -16,13 +16,14 @@ h1 {
     margin-bottom: 40px;
 }
 
-p {
+p, div {
     margin-bottom: 20px;
 }
 
-p#botoes {
-    position: relative;
-    top: 240px;
+p, div#botoes {
+    position: absolute;
+    top: 390px;
+    left: 170px;
     text-align: center;
 }
 
