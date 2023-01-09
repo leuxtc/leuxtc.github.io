@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
 /*Tela em retrato*/
+
+body {
+    background-position: center bottom;
+    background-image: url(../cev-portrait.jpg);
+}
