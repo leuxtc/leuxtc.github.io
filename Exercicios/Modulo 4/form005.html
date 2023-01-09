@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="cadastro.js" method="get">
+        <div>
+            <label for="in1">Numero 1: </label>
+            <input type="number" name="n1" id="in1" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </div>
+        <div>
+            <label for="in2">Numero 2: </label>
+            <input type="number" name="n2" id="in2" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </div>
+        <div>
+            <label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inome" maxlength="10" oninput="icplt.innerHTML = String(inome.value) + String(isobre.value)">
+        </div>
+        <div>
+            <label for="isobre">Sobrenome: </label>
+            <input type="text" name="sobre" id="isobre" maxlength="10" oninput="icplt.innerHTML = String(inome.value) + ' ' + String(isobre.value)">
+        </div>
+        <div>
+            <label for="isoma">Soma: </label>
+            <output name="soma" id="isoma">0</output>
+            <br>
+            <label for="icplt">Nome completo: </label>
+            <output name="cplt" id="icplt"></output>
+        </div>
+        <div id="botoes">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
