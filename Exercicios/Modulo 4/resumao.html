@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo Formularios</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="cadastro.js" method="post" autocomplete="off">
+        <fieldset>
+            <div>
+                <!--Nome:-->
+                <label for="inome">Nome</label><br>
+                <input type="text" name="nome" id="inome" minlength="3" maxlength="15" placeholder="Nome" size="20" required>
+                
+                <!--Sobrenome:-->
+                <label for="isobre">Sobrenome</label>
+                <input type="text" name="sobre" id="isobre" minlength="5" maxlength="15" placeholder="Sobrenome" size="20" required>
+            </div>
+            <br>
+            <div>
+                <!--Estado:-->
+                <label for="iest">Estado</label>
+                <select name="est" id="iest">
+                    <option value="iest">--- Escolha ---</option>
+                    <optgroup label="Região Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="BR">Brasilia</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste">
+                            <option value="BA">Bahia</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="FO">Fortaleza</option>
+                    </optgroup>
+                    <optgroup label="Região Sul">
+                            <option value="SC">Santa-Catarina</option>
+                            <option value="CU">Curitiba</option>
+                            <option value="TO">Tocantis</option>
+                    </optgroup>
+                </select>
+                <!--Sexo:-->
+                <label for="imasc">Masculino </label>
+                <input type="radio" name="sexo" id="imasc" required>
+                <label for="ifem">Feminino</label>
+                <input type="radio" name="sexo" id="ifem" required>
+            </div>
+            <br>
+            <div>
+                <!--Email:-->
+                <label for="iemail" id="email">Email: </label>
+                <input type="email" name="email" id="iemail" required minlength="20" maxlength="30" size="26" placeholder="example@email.com">
+                
+                <!--Telefone: -->
+                <label for="itel">Telefone: </label><br>
+                <input type="tel" name="tel" id="itel" size="10" placeholder="(xx)xxxx-xxxx">
+            </div>
+            <br>
+            <div>
+                <!--Profissão:-->
+                <label type="text" name="prof" id="iprof">Profissão
+                    <input type="text" name="prof" id="iprof" list="lstprof">
+                    <datalist id="lstprof">
+                        <option>Professor</option>
+                        <option>Desenvolvedor</option>
+                        <option>Cozinheiro</option>
+                        <option>Engenheiro</option>
+                        <option>Analista</option>
+                    </datalist>
+            </div>
+            <br>
+            <div>
+                <!--Ano de nascimento:-->
+                <label for="inas">Ano de Nascimento: </label>
+                <input type="number" name="nas" id="inas" max="2020"  min="1900" required oninput="calcIdade()">
+                
+                <!--Idade:-->
+                <label for="">Idade: </label>
+                <output name="idd" id="iidd">0</output>
+            </div>
+            <br>
+            <div>
+                <!--Nível de satisfação:-->
+                <label for="isat">Nível de satisfação</label>
+                <input type="range" name="sat" id="isat" max="10" min="0" oninput="ists.innerHTML = Number(isat.value)" value="5">
+                <output name="sat" id="ists"></output><br>
+
+                <!--Mensagem-->
+                <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Deixe aqui sua mensagem!"></textarea>
+            </div>
+            <br>
+            <div id="botoes">
+                <input type="submit" value="Enviar" id="ienviar">
+                <input type="reset" value="Limpar" id="ilimpar">
+            </div>
+        </fieldset>
+    </form>
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidd.innerHTML = Number(atual) - Number(inas.value) + ' ' + "Anos"
+        } 
+    </script>
+</body>
+</html>

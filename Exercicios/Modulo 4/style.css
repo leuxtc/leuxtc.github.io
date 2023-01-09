@@ -22,19 +22,19 @@ p, div {
 
 p, div#botoes {
     position: relative;
-    top: 100px;
+    top: 320px;
     text-align: center;
 }
 
 body {
     position: relative;
 
-    width: 400px;
+    width: 600px;
     height: 400px;
     padding: 24px;
 
-    top: 40px;
-    left: 35%;
+    top: 10px;
+    left: 25%;
     border-radius: 10px;
 
     background-color: rgb(255, 255, 255);
