@@ -18,6 +18,11 @@ Grande telas: acima de 1200px*/
         background-position: center center;
         background-size: cover;
     }
+
+    main {
+        width: 300px;
+        font-size: 1.4em;
+    }
     
     img#pc { display: none;}
     img#phone { display: none;}
@@ -33,6 +38,11 @@ Grande telas: acima de 1200px*/
         background-size: cover;
     }
 
+    main {
+        width: 400px;
+        font-size: 2em;
+    }
+
     img#pc { display: block;}
     img#phone { display: none;}
     img#print { display: none;}
@@ -45,6 +55,11 @@ Grande telas: acima de 1200px*/
         background: url(../imagens/back-tv.jpg);
         background-position: center center;
         background-size: cover;
+    }
+
+    main {
+        width: 600px;
+        font-size: 2.5em;
     }
 
     img#pc { display: none;}
