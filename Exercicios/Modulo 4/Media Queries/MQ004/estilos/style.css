@@ -16,7 +16,7 @@ body, html {
 
 header {
     padding: 10px;
-
+    
     background-color: cornflowerblue;
 }
 
@@ -30,7 +30,7 @@ menu ul li {
     margin: 8px;
     padding: 5px;
     border-radius: 4px;
-
+    
     background-color: rgba(74, 95, 123, 0.53);
 }
 
@@ -47,13 +47,13 @@ menu ul li:hover {
 
 main {
     text-align: left;
-
+    
     margin: 0px 10px;
     margin: auto;
     width: 300px;
     border-radius: 5px;
     padding: 10px;
-
+    
     background-color: rgb(210, 255, 253);
 }
 
@@ -62,5 +62,8 @@ article h2 {
 }
 
 article p {
+    font-size: 0.7em;
+    text-align: justify;
+    text-indent: 20px;
     margin: 14px;
 }
