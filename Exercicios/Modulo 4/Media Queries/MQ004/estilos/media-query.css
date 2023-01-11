@@ -14,6 +14,14 @@
 
 /*Tablets*/
 @media screen and (min-width: 768px) and (max-width: 992px){ 
+    span#burguer {display: none;}
+    menu {display: block;}
+
+    menu ul li {
+        margin: 20px;
+        display: inline;
+    }
+    
     main {
         font-size: 1.2em;
         width: 400px;
@@ -23,6 +31,14 @@
 
 /*Desktop*/
 @media screen and (min-width: 992px) and (max-width: 1200px){
+    span#burguer {display: none;}
+    menu {display: block;}
+
+    menu ul li {
+        margin: 20px;
+        display: inline;
+    }
+
     main{
         font-size: 1.4em;
         margin: auto;
@@ -32,13 +48,22 @@
 
 /*Televisões*/
 @media screen and (min-width: 1200px) and (orientation: landscape){
-    h1 {
-        font-size: 2.5em;
-    }
+    span#burguer {display: none;}
+    menu {display: block;}
 
+    
+    menu ul li {
+        margin: 20px;
+        display: inline;
+    }
+    
     main {
         font-size: 1.6em;
         margin: auto;
         width: 700px;
+    }
+    
+    h1 {
+        font-size: 2.5em;
     }
 }

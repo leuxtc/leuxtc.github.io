@@ -34,12 +34,17 @@ span#burguer {
     cursor: pointer;
 }
 
+menu {
+    display: none;
+}
+
 menu ul li {
     display: block;
-    
+
     margin: auto;
     margin-bottom: 6px;
     margin-top: 6px;
+    
     padding: 5px;
     border-radius: 15px;
     width: 200px;
