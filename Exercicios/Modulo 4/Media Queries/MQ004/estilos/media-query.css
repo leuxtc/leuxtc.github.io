@@ -19,7 +19,7 @@
 }
 
 /*Desktop*/
-@media screen and (min-width: 992px) and (max-width: 1200px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) and (orientation: landscape){
     main {
         margin: auto;
         width: 500px;
