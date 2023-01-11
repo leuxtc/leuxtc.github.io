@@ -34,6 +34,8 @@ span#burguer {
     cursor: pointer;
 }
 
+span#burguer:hover {background-color: rgb(68, 86, 120);}
+
 menu {
     display: none;
 }
