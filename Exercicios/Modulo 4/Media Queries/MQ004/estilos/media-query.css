@@ -7,20 +7,22 @@
 }
 
 /*Tablets*/
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) and (orientation: landscape){
     html {
         background-color: black;
     }
     
     main {
+        background-color: blueviolet;
         margin: auto;
         width: 400px;
     }
 }
 
 /*Desktop*/
-@media screen and (min-width: 992px) and (max-width: 1200px){
+@media screen and (min-width: 992px) and (max-width: 1200px) and (orientation: landscape){
     main {
+        background-color: blueviolet;
         margin: auto;
         width: 500px;
     }
