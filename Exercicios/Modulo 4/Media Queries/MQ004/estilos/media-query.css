@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
+
+/*Tablets*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    html {
+        background-color: black;
+    }
+    
+    main {
+        margin: auto;
+        width: 400px;
+    }
+}
+
+/*Desktop*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    main {
+        margin: auto;
+        width: 500px;
+    }
+}
+
+/*Televisões*/
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    main {
+        margin: auto;
+        width: 700px;
+    }
+}
