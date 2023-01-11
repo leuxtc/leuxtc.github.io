@@ -57,6 +57,10 @@ main {
     background-color: rgb(210, 255, 253);
 }
 
+h2 {
+    text-align: center;
+}
+
 p {
     margin: 14px;
 }
