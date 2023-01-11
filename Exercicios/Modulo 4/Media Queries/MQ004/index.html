@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="estilos/style.css" media="all">
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Teste de site responsivo</h1>
         <span id="burguer" onclick="menuOpen()" class="material-symbols-outlined">menu</span>
@@ -35,8 +35,15 @@
         </article>
     </main>
     <script>
+        function mudouTamanho() {
+            if(window.innerWidth >= 768) {
+                imenu.style.display = 'block'
+            } else {
+                imenu.style.display = 'none'
+            }
+        }
         function menuOpen() {
-            if (imenu.style.display == 'block'){
+            if(imenu.style.display == 'block'){
                 imenu.style.display = 'none'
             } else {
                 imenu.style.display = 'block'
