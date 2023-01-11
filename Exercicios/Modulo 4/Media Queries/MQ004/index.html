@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site responsivo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="estilos/style.css" media="all">
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body>
     <header>
         <h1>Teste de site responsivo</h1>
-        <menu>
+        <span id="burguer" onclick="menuOpen()" class="material-symbols-outlined">menu</span>
+        <menu id="imenu">
             <ul>
                 <li id="op1"><a href="#">Opção 1</a></li>
                 <li id="op2"><a href="#">Opção 2</a></li>
@@ -32,5 +34,14 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore consectetur libero, perspiciatis, similique, quasi at eaque iste nesciunt quo nisi aliquid tempora corporis praesentium sit rem ad amet odio soluta.</p>
         </article>
     </main>
+    <script>
+        function menuOpen() {
+            if (imenu.style.display == 'block'){
+                imenu.style.display = 'none'
+            } else {
+                imenu.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
