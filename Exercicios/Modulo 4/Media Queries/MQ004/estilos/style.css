@@ -34,12 +34,12 @@ menu li {
     background-color: rgba(74, 95, 123, 0.53);
 }
 
-a {
+menu > ul > li > a {
     text-decoration: none;
     color: whitesmoke;
 }
 
-a li:hover {
+menu > ul > li:hover {
     transition: 1s;
     transform: translate(-5px, -5px);
     background-color: rgba(55, 70, 91, 0.70);
