@@ -19,7 +19,7 @@
 }
 
 /*Desktop*/
-@media screen and (min-width: 992px) and (max-width: 1200px) and (orientation: landscape){
+@media screen and (min-width: 992px) and (max-width: 1200px){
     main {
         margin: auto;
         width: 500px;
@@ -27,12 +27,13 @@
 }
 
 /*Televisões*/
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (orientation: landscape){
     h1 {
         font-size: 2.5em;
     }
 
     main {
+        background-color: blueviolet;
         margin: auto;
         width: 700px;
     }
