@@ -4,6 +4,12 @@
     * {
         font-family: 'Courier New', Courier, monospace;
     }
+
+    main {
+        width: 500px;
+    }
+
+    menu{display: none;}
 }
 
 /*Tablets*/
