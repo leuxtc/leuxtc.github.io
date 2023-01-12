@@ -6,8 +6,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+    --color0: rgb(113, 0, 128);
+    --color1: rgb(170, 218, 244);
+    --color2: rgb(72, 117, 139);
+    --color3: rgb(99, 208, 230);
+}
+
 body, html {
-    background-color: rgb(113, 0, 128);
+    background-color: var(--color0);
 }
 
 form {
@@ -19,7 +26,7 @@ form {
     font-size: .8em;
 
     width: 230px;
-    height: 500px;
+    height: 510px;
     
 
     border-radius: 15px;
@@ -57,8 +64,15 @@ div#nome, div#senha {
     color: whitesmoke;
     
     border-radius: 9px;
-    background-color: rgb(139, 49, 118);
+    background-color: var(--color0);
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.197);
+}
+
+.material-symbols-outlined#form {
+    position: relative;
+    top: 6px;    
+
+    font-size: 30px;
 }
 
 input#inome, input#isenha {
@@ -71,14 +85,11 @@ input#inome, input#isenha {
     width: 170px;
     height: 40px;
     
-    
-    left: 22px;
-    
-    background-color: rgb(126, 198, 233);
+    background-color: var(--color1);
 }
 
 input#inome:hover, input#isenha:hover {
-    background-color: rgb(126, 215, 233);
+    background-color: var(--color3);
 }
 
 input#entrar, input#esenha {
@@ -87,27 +98,28 @@ input#entrar, input#esenha {
     width: 200px;
     height: 40px;
     
-    border: solid 2px rgb(126, 198, 233);
+    border: solid 1px ;
     border-radius: 9px;
+
+    color: black;
     background-color: rgba(255, 255, 255, 0);
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.197);
 }
 
 input#entrar {
     margin-top: 5px;
-    color: white;
-    background-color: rgb(126, 198, 233);
+    background-color: var(--color1);
 }
 
 input#entrar:hover {
-    background-color: rgb(72, 117, 139);
+    background-color: var(--color3);
     border: 0px;
     cursor: pointer;
 }
 
 input#esenha:hover {
-    color: white;
-    background-color: rgb(72, 117, 139);
+    color: black;
     border: 0px;
     cursor: pointer;
+    background-color: var(--color2);
 }
