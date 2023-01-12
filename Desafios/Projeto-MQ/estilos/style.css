@@ -8,9 +8,9 @@
 
 :root {
     --color0: rgb(113, 0, 128);
-    --color1: rgb(170, 218, 244);
-    --color2: rgb(72, 117, 139);
-    --color3: rgb(99, 208, 230);
+    --color1: rgb(94, 199, 180);
+    --color2: rgb(97, 189, 191);
+    --color3: rgb(110, 211, 204);
 }
 
 body, html {
@@ -68,11 +68,20 @@ div#nome, div#senha {
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.197);
 }
 
-.material-symbols-outlined#form {
+span.material-symbols-outlined {
     position: relative;
-    top: 6px;    
+    top: 8px;
 
     font-size: 30px;
+}
+
+.material-symbols-outlined#icon {
+    position: relative;
+    
+    top: -40px;
+    left: 75px;
+
+    font-size: 20px;
 }
 
 input#inome, input#isenha {
@@ -118,7 +127,7 @@ input#entrar:hover {
 }
 
 input#esenha:hover {
-    color: black;
+    color: white;
     border: 0px;
     cursor: pointer;
     background-color: var(--color2);
