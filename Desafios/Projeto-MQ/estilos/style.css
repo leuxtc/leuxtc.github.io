@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html {
+    background-color: rgb(113, 0, 128);
+}
+
+form {
+    margin: auto;
+    margin-top: 30px;
+    padding: 5px;
+    
+    text-align: center;
+    font-size: .8em;
+
+    width: 230px;
+    height: 500px;
+    
+
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.505);
+}
+
+img {    
+    position: relative;
+    width: 240px;
+    height: 200px;
+
+    top: -5px;
+    left: -5px;
+
+    border-radius: 15px 15px 0px 0px;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+p {
+    margin: 10px;
+    font-size: .9em;
+    text-align: justify;
+}
+
+div {
+    margin: 6px;
+}
+
+div#nome, div#senha {
+    font-size: .9em;
+    color: whitesmoke;
+    
+    border-radius: 9px;
+    background-color: rgb(139, 49, 118);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.197);
+}
+
+input#inome, input#isenha {
+    position: relative;
+    
+    text-align: center;
+    
+    border: 0px;
+    border-radius: 12px 0px 9px 0px;
+    width: 170px;
+    height: 40px;
+    
+    
+    left: 22px;
+    
+    background-color: rgb(126, 198, 233);
+}
+
+input#inome:hover, input#isenha:hover {
+    background-color: rgb(126, 215, 233);
+}
+
+input#entrar, input#esenha {
+    position: relative;
+    
+    width: 200px;
+    height: 40px;
+    
+    border: solid 2px rgb(126, 198, 233);
+    border-radius: 9px;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.197);
+}
+
+input#entrar {
+    margin-top: 5px;
+    color: white;
+    background-color: rgb(126, 198, 233);
+}
+
+input#entrar:hover {
+    background-color: rgb(72, 117, 139);
+    border: 0px;
+    cursor: pointer;
+}
+
+input#esenha:hover {
+    color: white;
+    background-color: rgb(72, 117, 139);
+    border: 0px;
+    cursor: pointer;
+}
