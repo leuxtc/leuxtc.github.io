@@ -9,10 +9,10 @@
         background-attachment: fixed;
         background-image: linear-gradient(to bottom, var(--color0), var(--color1) 100%);
     }
-    
+
     form {
-        position: relative;
         margin: auto;
+        position: relative;
         
         top: 150px;
         height: 250px;
@@ -46,11 +46,6 @@
     input#entrar, input#esenha {
         margin: 0px;
         width: 390px;
-    }
-
-    .material-symbols-outlined#icon {
-        top: -35px;
-        left: 65%;
     }
 
 }

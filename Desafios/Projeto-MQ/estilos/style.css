@@ -20,7 +20,6 @@ body, html {
 
 form {
     margin: auto;
-    margin-top: 30px;
     padding: 5px;
     
     text-align: center;
@@ -77,11 +76,8 @@ span.material-symbols-outlined {
 }
 
 .material-symbols-outlined#icon {
-    position: relative;
-    
-    top: -40px;
-    left: 75px;
-
+    top: -30px;
+    left: 70px;
     font-size: 20px;
 }
 
