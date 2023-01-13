@@ -40,12 +40,19 @@ section#login {
 }
 
 section#login div#imagem {
+    display: block;
+
     background: url(../pexels-anni-roenkae-3109807.jpg) no-repeat;
     background-size: cover;
     background-position: left bottom;
+    
     height: 200px;
+
+    transition: width .4s, height .4s;
+    transition-timing-function: ease;
 }
 
 section#login div#formulario {
+    display: block;
     padding: 10px;
 }
