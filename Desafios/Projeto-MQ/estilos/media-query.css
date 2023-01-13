@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+@media print {
+    
+}
+
+@media screen and (min-width: 768px){
+    body, html {
+        background-attachment: fixed;
+        background-image: linear-gradient(to bottom, var(--color0), var(--color1) 100%);
+    }
+    
+    form {
+        margin: auto;
+        margin-top: 10%;
+
+        height: 300px;
+        width: 900px;
+    }
+
+    img {
+        position: relative;
+        
+        width: 490px;
+        height: 310px;
+        
+        left: 230px;
+        border-radius: 0px 15px 15px 0px;
+    }
+
+    div, p, h1 {
+        position: relative;
+        top: -100%;
+        left: 15px;
+        
+        width: 390px;
+    }
+    
+    h1 {
+        font-size: 1.7em;
+    }
+
+    input#inome, input#isenha {
+        height: 30px;
+        width: 350px;
+    }
+
+    input#entrar, input#esenha {
+        margin: 0px;
+        width: 390px;
+    }
+
+    .material-symbols-outlined#icon {
+        left: 64%;
+    }
+    
+}

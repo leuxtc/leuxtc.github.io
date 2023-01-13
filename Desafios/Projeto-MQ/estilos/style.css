@@ -4,13 +4,14 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 :root {
     --color0: rgb(113, 0, 128);
-    --color1: rgb(94, 199, 180);
     --color2: rgb(97, 189, 191);
-    --color3: rgb(110, 211, 204);
+    --color1: rgb(110, 211, 204);
+    --color3: rgb(94, 199, 180);
 }
 
 body, html {
@@ -90,7 +91,7 @@ input#inome, input#isenha {
     text-align: center;
     
     border: 0px;
-    border-radius: 12px 0px 9px 0px;
+    border-radius: 12px 10px 0px 0px;
     width: 170px;
     height: 40px;
     
@@ -107,7 +108,7 @@ input#entrar, input#esenha {
     width: 200px;
     height: 40px;
     
-    border: solid 1px ;
+    border: 0px ;
     border-radius: 9px;
 
     color: black;
@@ -122,8 +123,11 @@ input#entrar {
 
 input#entrar:hover {
     background-color: var(--color3);
-    border: 0px;
     cursor: pointer;
+}
+
+input#esenha {
+    border: solid 1px var(--color1);
 }
 
 input#esenha:hover {
