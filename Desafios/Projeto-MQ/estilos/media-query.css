@@ -13,8 +13,8 @@
     form {
         position: relative;
         margin: auto;
-        margin-top: 50px;
-
+        
+        top: 150px;
         height: 250px;
         width: 700px;
     }
