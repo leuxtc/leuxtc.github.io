@@ -48,7 +48,8 @@
     }
 
     .material-symbols-outlined#icon {
-        left: 64%;
+        top: -35px;
+        left: 65%;
     }
 
 }
