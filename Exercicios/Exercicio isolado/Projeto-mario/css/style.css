@@ -95,6 +95,8 @@ body, html {
 .conteudo #btn {
     position: relative;
 
+    transition: .4s;
+
     left: -34vw;
     top: -300px;
 
@@ -106,4 +108,10 @@ body, html {
     color: white;
     background-color: red;
     cursor: pointer;
+}
+
+.conteudo #btn:hover {
+    transition: 1s;
+    padding-right: 45px;
+    transform: scale(1.1);
 }
