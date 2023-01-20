@@ -1,0 +1,11 @@
+Grid: alinhamento
+
+6 Propriedades de alinhamento:
+
+'justify-content'
+'justify-items'
+'justify-self'
+
+'align-content'
+'align-items'
+'align-self'
