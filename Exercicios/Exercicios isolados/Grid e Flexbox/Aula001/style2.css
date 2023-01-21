@@ -8,6 +8,16 @@
     background-color: black;
     width: 100vw;
     height: 100vh;
-
+    
     display: grid;
+    grid-template-columns: 30px 30px 30px;
+    grid-template-rows: 30px 30px 30px;
+    gap: 20px;
+
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.container div {
+    background-color: aqua;
 }

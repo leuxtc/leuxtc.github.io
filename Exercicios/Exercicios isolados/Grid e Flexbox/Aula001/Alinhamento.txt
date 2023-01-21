@@ -2,10 +2,32 @@ Grid: alinhamento
 
 6 Propriedades de alinhamento:
 
+alinhamento em X
 'justify-content'
 'justify-items'
 'justify-self'
 
+alinhamento em Y
 'align-content'
 'align-items'
 'align-self'
+
+...-content permite alinhar o próprio grid, relativo ao espaço fora do grid
+...-items alinha os items dentro da célula
+...-self alinha o item próprio dentro da célula
+
+7 valores:
+
+start
+end
+center
+stretch
+space-between
+space-around
+space-evenly
+
+items:
+start
+end
+center
+stretch
