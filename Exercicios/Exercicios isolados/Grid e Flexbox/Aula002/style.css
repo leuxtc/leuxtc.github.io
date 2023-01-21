@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    border: solid 2px red;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1 1 30px;
+    /* GROW SHRINK E BASIS */
+}
+
+.item {
+    border: solid 2px red;
+    padding: 10px;
+}
+
+.box {
+    border: solid 2px blue;
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+#item_1 {
+    order: 3;
+}
+
+#item_2 {
+    flex-grow: 2;
+}
+
+#item_3 {
+    flex-grow: 3;
+    flex-shrink: 5;
+}
